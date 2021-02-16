@@ -34,4 +34,5 @@ def insta_down(link):
         "Caption" : caption,
         "Video" : video_url
     }
-    return x
+    y = json.dumps(x)
+    return y

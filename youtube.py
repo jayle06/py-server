@@ -1,5 +1,6 @@
 from pytube import YouTube
 import datetime
+import json
 
 #conver list to dictionary
 def Convert(lst):
@@ -38,4 +39,5 @@ def yt_videos(url):
             "Audio" : audio_dict
         }
     }
-    return x
+    y = json.dumps(x)
+    return y
